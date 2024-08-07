@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+h3 {
+    color:  #0080ff; /* Color verde agua */
+    
+}
+
+#chat {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 400px;
+    overflow-y: auto;
+}
+
+.messages {
+    margin-bottom: 20px;
+}
+
+.message {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 0.1px;
+    max-width: 100%;
+}
+
+.bot-message {
+    background-color: #e0f7fa; /* Color celeste claro */
+    color: #000000; /* Color verde oscuro */
+}
+
+.user-message {
+    background-color: #c8e6c9; /* Color verde claro */
+    color:  #0080ff; /* Color verde oscuro */
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+}
+
+.options button {
+    background-color:  #0080ff; /* Color verde agua */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 0.1px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.options button:hover {
+    background-color:  #0171e1; /* Color verde oscuro */
+}
+
+.details {
+    margin-top: 20px;
+}
+
+.details p {
+    margin: 5px 0;
+}

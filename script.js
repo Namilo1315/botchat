@@ -8,9 +8,12 @@ function showOptions() {
         <button onclick="showDetails('ayuda')">Ayuda Social</button>
         <button onclick="showDetails('juzgado')">Juzgado Vial</button>
         <button onclick="showDetails('reclamos')">Reclamos</button>
+      
     `;
     document.getElementById('messages').innerHTML = `
-        <div class="message bot-message">Selecciona una opción:</div>
+    <div>
+    <h4 class="message bot-message fw-bold py-4">Selecciona una opción:</h4>
+</div>
     `;
     document.getElementById('options').innerHTML = optionsHtml;
 }
@@ -21,8 +24,9 @@ function showDetails(option) {
     switch (option) {
         case 'rentas':
             detailsHtml = `
-                <div class="details">
-                    <p><strong>Rentas</strong></p>
+                <div class="details ">
+                
+                    <h3 class="message bot-message fw-bold py-4 mb-2"><strong>Oficina de Rentas</strong></h3>
                     <p>Horario: Lunes a Viernes, 8:00 - 16:00</p>
                     <p>Dirección: Av. Central 123</p>
                     <p>Teléfono: (261) 1234-5678</p>
@@ -109,10 +113,12 @@ function showDetails(option) {
     }
 
     document.getElementById('messages').innerHTML = detailsHtml + `
-        <div class="message bot-message">
-            <p>¿Necesitas más información?</p>
+        <div class="message fw-bold ">
             <p>Si tienes alguna otra consulta, vuelve al menú principal o llama al 0800-555-2578.</p>
-            <button onclick="showOptions()">Volver al menú principal</button>
+            <h5 class="text-primary fw-bold">MUCHAS GRACIAS POR CONTACTARNOS</h5>
+            <button class=" button" onclick="showOptions()">Volver al menú principal</button>
+            <a href="./index.html"> <button>Terminar</button></a>
         </div>
     `;
+   
 }

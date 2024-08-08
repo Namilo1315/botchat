@@ -1,21 +1,18 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #f5f5f5;
+    color: #000000;
     margin: 0;
     padding: 0;
 }
 
 .container {
-    width: 80%;
+    width: 100%;
     margin: auto;
     padding: 20px;
 }
 
-header {
-    text-align: center;
-    margin-bottom: 20px;
-}
+
 
 .logo {
     width: 100px;
@@ -33,7 +30,7 @@ h3 {
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    height: 400px;
+    height: 600px;
     overflow-y: auto;
 }
 
@@ -43,7 +40,7 @@ h3 {
 
 .message {
     padding: 10px;
-    margin: 10px 0;
+    margin: 0px 0;
     border-radius: 0.1px;
     max-width: 100%;
 }
@@ -74,14 +71,21 @@ h3 {
     margin-bottom: 10px;
 }
 
+
 .options button:hover {
     background-color:  #0171e1; /* Color verde oscuro */
 }
 
-.details {
-    margin-top: 20px;
-}
+
 
 .details p {
     margin: 5px 0;
 }
+/* *********************/
+        /* seccion R E S P O N S I V E */
+        /* *********************/
+        
+        @media screen and (max-width: 800px) {
+            
+
+        }

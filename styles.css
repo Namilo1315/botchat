@@ -81,11 +81,22 @@ h3 {
 .details p {
     margin: 5px 0;
 }
-/* *********************/
-        /* seccion R E S P O N S I V E */
-        /* *********************/
-        
-        @media screen and (max-width: 800px) {
-            
+/* Sección R E S P O N S I V E */
+@media screen and (max-width: 800px) {
+    #chat {
+        height: 100vh; /* Usar toda la altura disponible en pantalla */
+        max-width: 100%; /* Asegurarse de que el chat ocupe todo el ancho disponible en móviles */
+        margin: 0; /* Eliminar margen para que ocupe toda la pantalla */
+        border-radius: 0; /* Quitar bordes redondeados en móviles */
+        border: none; /* Quitar bordes en móviles */
+        box-shadow: none; /* Quitar sombra en móviles */
+    }
 
-        }
+    .container {
+        padding: 0; /* Eliminar padding en móviles */
+    }
+
+    .message {
+        border-radius: 5px; /* Ajustar bordes para parecer mensajes de chat */
+    }
+}
